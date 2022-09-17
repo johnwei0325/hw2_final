@@ -1,0 +1,340 @@
+.root {
+ width: 100%;
+ height: 100%;
+ border:rgb(249, 10, 10) solid 2px;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ /*align-items: center;*/
+
+ color: #bd1c1c;
+ font-weight: 300;
+}
+.main_frame{
+    width: 70%;
+    height: 80%;
+    position: absolute;
+    border:rgb(249, 10, 10) solid 2px;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1em;
+    color: #4d4d4d;
+    font-weight: 300;*/
+}
+.todo-app__checkbox {
+ 
+ width: 40px;
+ height: 40px;
+ /*background: #ddd;*/
+ /*margin: 15px;*/
+ border-radius: 50%;
+ position: relative;
+ /*box-shadow: 0px 1px 3px
+ rgba(248, 240, 240, 0.312);*/
+}
+.todo-app__checkbox label {
+ 
+ width: 35px;
+ height: 35px;
+ /*border-radius: 50%;*/
+ background-image: url("function6.png");
+ /*box-shadow: inset 0px 1px 3px
+ rgba(0, 0, 0, 0.312);*/
+ 
+ cursor: pointer;
+ position: absolute;
+ top: 8%;
+ left: -4%;
+ z-index: 1;
+}
+.todo-app__checkbox input[type="checkbox"] {
+ visibility: hidden;
+}
+.todo-app__checkbox
+ input[type="checkbox"]:checked + label {
+    background-image: url("unmute.png");
+}
+
+* {
+ box-sizing: border-box;
+}
+html,body {
+ height: 100%;
+ font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+ background: rgb(30, 30, 30);
+ overflow: auto;
+}
+.main_frame{
+    margin: 0 auto;
+    width: 65%;
+    height: 80%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+   /* border:rgb(249, 10, 10) solid 2px;*/
+    /*display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1em;
+    color: #4d4d4d;
+    font-weight: 300;*/
+}
+
+.f1 {
+    width: 30px;
+    height: 40px;
+    position: absolute;
+    top: 550%;
+    left: 200%;
+    /*border: 1px solid white;
+    background-color: aliceblue;*/
+    z-index: 1;
+    cursor: pointer;
+}
+.f2 {
+    width: 30px;
+    height: 40px;
+    position: absolute;
+    top: 550%;
+    left: 600%;
+    /*border: 1px solid white;
+    background-color: aliceblue;*/
+    z-index: 1;
+    cursor: pointer;
+}
+.f3 {
+    width: 30px;
+    height: 40px;
+    position: absolute;
+    top: 550%;
+    left: 1000%;
+    /*border: 1px solid white;
+    background-color: aliceblue;*/
+    z-index: 1;
+    cursor: pointer;
+}
+.fuck {
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 41.5%;
+    /*border: 1px solid white;
+    background-color: aliceblue;*/
+    z-index: 1;
+}
+.anchored_pic {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 84%;
+    left: 3%;
+    /*border:rgb(249, 10, 10) solid 2px;*/
+}
+.time {
+    width: 250px;
+    height: 30px;
+    position: absolute;
+    top: 90%;
+    left: 3%;
+    /*border:rgb(249, 10, 10) solid 2px;*/
+}
+#mute_pic {
+    position: absolute;
+    top: 0%;
+    left: 93%;
+    /*cursor: pointer;*/
+    /*transform: translate(-100%, -100%);*/
+}
+#main_pic1 {
+ width: 10px;
+ height: 10px;
+ /*border: 1px solid gray;*/
+ position: absolute;
+ top: 40%;
+ left: 40%;
+ /*transform: translate(-50%, -50%);*/
+}
+#main_pic2 {
+    display: none;
+}
+.main_frame:hover
+#main_pic2 {
+    display: inline;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+#main_pic3 {
+    display: none;
+}
+
+
+.fuck:hover
+#main_pic3 {
+    display: inline;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -145%;
+    left: -12.5%;
+}
+
+.participants{
+    width: 500px;
+    height: 650px;
+    border: 1px solid white;
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.participant1 {
+    width: 200px;
+    height: 150px;
+    background: rgb(61, 61, 61);
+    border: 1px solid rgb(61, 61, 61);
+    border-radius: 10px;
+    position: absolute;
+    top: 15%;
+    left: 70%;
+}
+.participant2 {
+    width: 200px;
+    height: 150px;
+    background: rgb(61, 61, 61);
+    border: 1px solid rgb(61, 61, 61);
+    border-radius: 10px;
+    position: absolute;
+    top: 15%;
+    left: 85%;
+}
+.participant3 {
+    width: 200px;
+    height: 150px;
+    background: rgb(61, 61, 61);
+    border: 1px solid rgb(61, 61, 61);
+    border-radius: 10px;
+    position: absolute;
+    top: 40%;
+    left: 70%;
+}
+.participant4 {
+    width: 200px;
+    height: 150px;
+    background: rgb(61, 61, 61);
+    border: 1px solid rgb(61, 61, 61);
+    border-radius: 10px;
+    position: absolute;
+    top: 40%;
+    left: 85%;
+}
+.participant5 {
+    width: 300px;
+    height: 150px;
+    background: rgb(61, 61, 61);
+    border: 1px solid rgb(61, 61, 61);
+    border-radius: 10px;
+    position: absolute;
+    top: 65%;
+    left: 74.5%;
+}
+.participant_pic {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.participant_name {
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    position: relative;
+    top: 50%;
+    left: 8%;
+    transform: translate(0%, -50%);
+}
+.participant_name2 {
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    position: relative;
+    top: 37%;
+    left: 6%;
+    transform: translate(0%, -50%);
+}
+
+.participant_mute {
+    font-size: 10px;
+    position: relative;
+    top: -50%;
+    left: 80%;
+    /*cursor: pointer;*/
+    /*transform: translate(0%, -50%);*/
+}
+.participant_mute2 {
+    font-size: 10px;
+    position: relative;
+    top: -60%;
+    left: 85%;
+    /*cursor: pointer;*/
+    /*transform: translate(0%, -50%);*/
+}
+.functions {
+    width: 220px;
+    height: 25px;
+   /* border: 1px solid rgb(195, 12, 12);*/
+    position: absolute;
+    top: 93%;
+    left: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#switch_pic {
+    display: none;
+    top: 0%;
+    left: 0%;
+    border: 1px solid rgb(195, 12, 12);
+    width: 30px;
+    height: 30px;
+}
+
+.functions > div {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+.mainfunctions {
+    width: 265px;
+    height: 30px;
+   
+   /* border: 1px solid rgb(195, 12, 12);*/
+    position: absolute;
+    top: 92%;
+    left: 37%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.mainfunctions > div {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
