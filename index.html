@@ -5,52 +5,64 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <div class="anchored_pic"><img src="anchored.png" width="60"></div>
+        <div class="anchored_pic"><img src="anchored.png" width="30" top=5px>
+            <p id="main_name" style="color:white">你</p></div>
                 <div class="time">
                     <p style="color:white">凌晨4:42 | Web Programming</p>
         </div>
-        <div class="root">
-            <div class="root_section1">
-                <div class="section1_head">
-                    <div><img src="head1.jpg" width=150em></div>
-                    <div id="main_pic2"><img src="head2.jpg" width=150em></div>
-                    
-                    <div class="main_func">
-                        <div id="main_pic3">
-                            <img  src="head3.jpg" width=150em>
-                            <div class="main_func">
-                                <div class="main_func_element" title="取消訂選畫面"></div>
-                                <div class="main_func_element" title="取消區塊顯示"></div>
-                                <div class="main_func_element" title="畫面最小化"></div>
-                            </div>
-                        </div>
-                    </div>
+        <div id="root_id" class="root">
+            <div id="root_section1_id" class="root_section1">
+                <!--<div class="section1_head">
+                    <img class"main_pic" id="head" src="head1.jpg" width=150em>
+                    <div id="main_pic2"><img src="head2.jpg" width=150em></div>!-->
+                    <div class="section1_head">
+                        <img class="main_pic" id="head" src="head1.jpg" width=150em>
+                        <div class="main_func"><img id="main_pic_id" class="main_func_pic" src="fuck.jpg" width=50%></div>
                 </div>
+                    <!--<div class="main_func">
+                        <div class="main_func_element" title="取消訂選畫面"></div>
+                        <div class="main_func_element" title="取消區塊顯示"></div>
+                        <div class="main_func_element" title="畫面最小化"></div>
+                    </div>!-->
+                        
+                            
+                
                 <div class="main_mute"><img src="mute2.png" width=80%></div>
             </div>
-            <div class="root_section2">
-                <div class="section2_visitors">
-                    <div class="visitor_pic"><img class="participant_pic" src="participant1.png" width=100%></div>
+            
+            <div id="root_section2_id" class="root_section2">
+                <div class="section2_visitors" id="vis_1">
+                    <div><img  id="del_1" class="cross_pic" src="cross.png" width="30%"></div>
+                    <div><img class="visitor_pic" src="participant1.png" width=100%>
+                        <img class="vis_func" id="vis_func1" src="fuck.jpg" width=100%></div>
                     <div class="visitor_mute"><img class="participant_mute" src="mute.png" width=150%></div>
                     <div class="visitor_name">李彥儒</div>
                 </div>
-                <div class="section2_visitors">
-                    <div class="visitor_pic"><img class="participant_pic" src="participant2.png" width=100%></div>
+                <div class="section2_visitors" id="vis_2">
+                    <div><img  id="del_2" class="cross_pic" src="cross.png" width="30%"></div>
+                    <div><img  class="visitor_pic" src="participant2.png" width=100%>
+                        <img class="vis_func" id="vis_func1" src="fuck.jpg" width=100%></div>
                     <div class="visitor_mute"><img class="participant_mute" src="mute.png" width=150%></div>
                     <div class="visitor_name">陳孟宏</div>
                 </div>
-                <div class="section2_visitors">
-                    <div class="visitor_pic"><img class="participant_pic" src="participant3.png" width=100%></div>
+                <div class="section2_visitors" id="vis_3">
+                    <div ><img  id="del_3" class="cross_pic" src="cross.png" width="30%"></div>
+                    <div><img  class="visitor_pic" src="participant3.png" width=100%>
+                        <img class="vis_func" id="vis_func1" src="fuck.jpg" width=100%></div>
                     <div class="visitor_mute"><img class="participant_mute" src="mute.png" width=150%></div>
                     <div class="visitor_name">ylh</div>
                 </div>
-                <div class="section2_visitors">
-                    <div class="visitor_pic"><img class="participant_pic" src="participant4.png" width=100%></div>
+                <div class="section2_visitors" id="vis_4">
+                    <div><img  id="del_4" class="cross_pic" src="cross.png" width="30%"></div>
+                    <div><img  class="visitor_pic" src="participant4.png" width=100%>
+                        <img class="vis_func" id="vis_func1" src="fuck.jpg" width=100%></div>
                     <div class="visitor_mute"><img class="participant_mute" src="mute.png" width=150%></div>
                     <div class="visitor_name">劉蕙德</div>
                 </div> 
-                <div class="section2_visitors">
-                    <div class="visitor_pic"><img class="participant_pic" src="participant5.png" width=100%></div>
+                <div class="section2_visitors" id="vis_5">
+                    <div ><img  id="del_5" class="cross_pic" src="cross.png" width="30%"></div>
+                    <div><img  class="visitor_pic" src="participant5.png" width=100%>
+                        <img class="vis_func" id="vis_func1" src="fuck.jpg" width=100%></div>
                     <div class="visitor_mute"><img class="participant_mute" src="mute.png" width=150%></div>
                     <div class="visitor_name">童子瑜</div>
                 </div>         
@@ -79,6 +91,6 @@
             </div>
         </div>
             
-        
+        <script src="main.js"></script>
     </body>
 </html>

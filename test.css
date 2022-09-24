@@ -1,0 +1,18 @@
+.container {
+    width: 400px;
+    height: 600px;
+    position: relative;
+    border: rgb(249, 10, 10) solid 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box {
+    margin: 2%;
+    width: 45%;
+    height: 20%;
+    border: rgb(249, 10, 10) solid 2px;
+}

@@ -45,6 +45,8 @@ html,body {
 
 .section1_head {
     position: relative;
+    /*border-radius: 50%;*/
+    /*border: rgb(249, 10, 10) solid 2px;*/
     /*top: 50%;
     left: 50%;
     transform: translate(-100%, -100%);*/
@@ -69,49 +71,45 @@ html,body {
     }
 }
 
-#main_pic2 {
-    display: none;
-}
-
-.root_section1:hover
-#main_pic2 {
-    display: inline;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-}
-
 .main_func {
     position: absolute;
     top: 40%;
     left: 10%;
     width: 85%;
     height: 30%;
-   /*border: rgb(249, 10, 10) solid 2px;*/
+    /*border: rgb(249, 10, 10) solid 2px;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.main_func_pic {
+    position: absolute;
+
+    width: 100%;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.root_section1:hover
+.main_func_pic{
+    opacity: 0.5;
+}
+
+.main_func:hover
+.main_func_pic {
+    opacity: 1;
+}
+
+.main_pic {
+    border-radius: 50%;
 }
 
 .main_func_element {
     cursor: pointer;
     width: 30%;
     height: 100%;
-   /*border: rgb(249, 10, 10) solid 2px;*/
-}
-
-#main_pic3 { 
-    display: none;
-}
-
-.main_func:hover
-#main_pic3 {
-    width: 10em;
-    height: 10em;
-    display: inline;
-    position: absolute;
-    top: -135%;
-    left: -12.5%;
+   border: rgb(249, 10, 10) solid 2px;
 }
 
 .root_section2 {
@@ -149,12 +147,35 @@ html,body {
     justify-content: space-around;
     align-items: center;
 }
+.deleted {
+    visibility: hidden;
+}
 
 .visitor_pic {
     width: 5em;
     height: 5em;
     /*border: rgb(249, 10, 10) solid 2px;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 50%;
+}
+
+.vis_func {
+    width: 5em;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.vis_func:hover {
+    opacity: 0.5;
+    cursor: pointer;
 }
 
 @media only screen and (max-width:800px){
@@ -227,11 +248,16 @@ html,body {
 }
 
 .anchored_pic {
-    width: 10px;
-    height: 10px;
+    width: 80px;
+    height: 30px;
     position: absolute;
-    top: 84%;
+    top: 86%;
     left: 3%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     /*border:rgb(249, 10, 10) solid 2px;*/
 }
 
@@ -253,6 +279,7 @@ html,body {
     justify-content: space-around;
     align-items: center;
 }
+
 
 .footer_func {
     cursor: pointer;
@@ -294,4 +321,33 @@ html,body {
 .todo-app__checkbox
     input[type="checkbox"]:checked + label {
        background-image: url("unmute.png");
+}
+
+.cross_pic {
+    border:rgb(249, 10, 10) solid 2px;
+    border-radius: 50%;
+    width: 15%;
+    position: absolute;
+    top:5%;
+    left: 5%;
+    cursor: pointer;
+}
+
+.cross_pic:hover {
+    cursor: pointer;
+    width: 17%;
+}
+
+.switch_to_no_main {
+    margin: 0.5%;
+    width: 32%;
+    height: 48%;
+    border-radius: 10%;
+   /*border: rgb(249, 10, 10) solid 2px;*/
+    background-color: rgb(61, 61, 61);
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
 }
