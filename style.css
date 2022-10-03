@@ -37,11 +37,11 @@ html,body {
     align-items: center;
 }
 
-@media only screen and (max-width:700px){
+/*@media only screen and (max-width:700px){
     .root_section1{
         width:50%;
     }
-}
+}*/
 
 .section1_head {
     position: relative;
@@ -128,11 +128,11 @@ html,body {
     flex-wrap: wrap;*/
 }
 
-@media only screen and (max-width:700px){
+/*@media only screen and (max-width:700px){
     .root_section2{
         width: 50%;
     }
-}
+}*/
 
 .section2_visitors {
     margin: 2%;
@@ -350,4 +350,8 @@ html,body {
     position: relative;
     justify-content: space-around;
     align-items: center;
+}
+
+#plus {
+    border-radius: 50%;
 }
